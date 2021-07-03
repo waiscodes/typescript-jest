@@ -26,6 +26,7 @@ const Book: React.FC<IProps> = ({ books }) => {
   return (
     <div>
       <h1>hello world from Book component</h1>
+      {renderBooks()}
     </div>
   );
 };

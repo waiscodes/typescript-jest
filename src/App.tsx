@@ -15,7 +15,14 @@ interface IState {
 }
 
 function App() {
-  const [books, setBooks] = useState<IState["books"]>([]);
+  const [books, setBooks] = useState<IState["books"]>([
+    {
+      title: "Name of the Wind",
+      author: "Patrick Rothfuss",
+      upvotes: 35,
+      recBy: "Birm",
+    },
+  ]);
 
   return (
     <div className='App'>
