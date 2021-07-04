@@ -10,6 +10,19 @@ interface IProps {
 }
 
 const Blockchain: React.FC<IProps> = ({ blockchain }) => {
+  const renderBlockchain = (): JSX.Element[] => {
+    return blockchain.map((block) => {
+      return (
+        <li>
+          <div className='block'>
+            <p>Hash: {block.hash}</p>
+            <p>Content: {block.content}</p>
+          </div>
+        </li>
+      );
+    });
+  };
+
   return (
     <div>
       <h1>Hello world from the blockchain component</h1>
