@@ -4,16 +4,16 @@ import "./App.css";
 // components
 import Block from "./components/Block";
 
-// Book Interface
+// Block Interface
 interface IState {
-  block: {
+  blockchain: {
     content: string;
     hash: string;
   }[];
 }
 
 function App() {
-  const [block, setBlock] = useState<IState["block"]>([]);
+  const [blockchain, setBlockchain] = useState<IState["blockchain"]>([]);
 
   return (
     <div className='App'>
