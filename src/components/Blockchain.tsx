@@ -1,4 +1,10 @@
 import React from "react";
+import { IState as Props } from "../App";
+
+// Block interface
+interface IProps {
+  block: Props["block"];
+}
 
 const Blockchain = () => {
   return (
