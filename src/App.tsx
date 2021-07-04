@@ -5,23 +5,14 @@ import "./App.css";
 
 // Book Interface
 interface IState {
-  books: {
-    title: string;
-    author: string;
-    upvotes: number;
-    recBy: string;
+  block: {
+    content: string;
+    hash: string;
   }[];
 }
 
 function App() {
-  const [books, setBooks] = useState<IState["books"]>([
-    {
-      title: "Name of the Wind",
-      author: "Patrick Rothfuss",
-      upvotes: 35,
-      recBy: "Birm",
-    },
-  ]);
+  const [block, setBlock] = useState<IState["block"]>([]);
 
   return (
     <div className='App'>
