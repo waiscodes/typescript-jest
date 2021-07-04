@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 // components
+import Block from "./components/Block";
 
 // Book Interface
 interface IState {
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Hello world</h1>
+      <Block />
     </div>
   );
 }
