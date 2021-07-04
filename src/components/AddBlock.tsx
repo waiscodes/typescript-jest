@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { IState as Props } from "../App";
+import sha256 from "crypto-js/sha256";
 
 // Block interface
 interface IProps {
@@ -9,6 +10,8 @@ interface IProps {
 
 const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
   const contentRef = useRef<any>();
+
+  console.log(sha256);
 
   const handleSubmit = (): void => {
     console.log("something");
