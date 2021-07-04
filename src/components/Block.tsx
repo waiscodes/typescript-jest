@@ -9,12 +9,12 @@ interface IProps {
 const Block: React.FC<IProps> = ({ block }) => {
   return (
     <div>
-      <li>
+      <div>
         <div className='block'>
           <p>Hash: {block.hash}</p>
           <p>Content: {block.content}</p>
         </div>
-      </li>
+      </div>
     </div>
   );
 };

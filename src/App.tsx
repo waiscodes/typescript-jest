@@ -19,8 +19,8 @@ export interface IState {
 function App() {
   const [blockchain, setBlockchain] = useState<IState["blockchain"]>([
     {
-      content: "hello world",
-      hash: "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9",
+      content: "Hello, world from genesis block!",
+      hash: "521ec81f86658406e253b16cb7f00d967f86e91e6839a70edda8a9b01631b90a",
     },
   ]);
 
