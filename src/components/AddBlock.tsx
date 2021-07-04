@@ -22,15 +22,17 @@ const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
     ]);
   };
 
-  const handleSubmit = (e: React.MouseEvent<HTMLElement>): void => {
+  const handleSubmit = (e: React.FormEvent<HTMLElement>): void => {
     e.preventDefault();
     createBlock();
   };
 
   return (
     <div>
-      <input type='text' ref={contentRef} />
-      <button onClick={handleSubmit}>Add block</button>
+      <form onSubmit={handleSubmit}>
+        <input type='text' ref={contentRef} />
+        <input type='submit' value='Add Block to Blockchain' />
+      </form>
     </div>
   );
 };
