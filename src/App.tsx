@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 // components
-import Block from "./components/Block";
+import Blockchain from "./components/Blockchain";
 
 // Block Interface
 export interface IState {
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Hello world</h1>
-      <Block />
+      <Blockchain />
     </div>
   );
 }
