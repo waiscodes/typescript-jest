@@ -12,11 +12,12 @@ const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
   const contentRef = useRef<any>();
 
   const createBlock = (): void => {
+    console.log(blockchain[blockchain.length - 1]);
     setBlockchain([
       ...blockchain,
       {
         content: contentRef.current.value,
-        hash: sha256(contentRef.current.value).toString(),
+        newHash: sha256(contentRef.current.value).toString(),
       },
     ]);
   };

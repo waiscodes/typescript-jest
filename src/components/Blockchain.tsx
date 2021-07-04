@@ -12,7 +12,7 @@ interface IProps {
 const Blockchain: React.FC<IProps> = ({ blockchain }) => {
   const renderBlockchain = (): JSX.Element[] => {
     return blockchain.map((block) => {
-      return <Block block={block} key={block.hash} />;
+      return <Block block={block} key={block.newHash} />;
     });
   };
 

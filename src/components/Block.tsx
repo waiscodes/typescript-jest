@@ -11,7 +11,7 @@ const Block: React.FC<IProps> = ({ block }) => {
     <div>
       <div>
         <div className='block'>
-          <p>Hash: {block.hash}</p>
+          <p>Hash: {block.newHash}</p>
           <p>Content: {block.content}</p>
         </div>
       </div>
