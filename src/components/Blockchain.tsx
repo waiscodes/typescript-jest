@@ -3,10 +3,10 @@ import { IState as Props } from "../App";
 
 // Block interface
 interface IProps {
-  block: Props["block"];
+  blockchain: Props["blockchain"];
 }
 
-const Blockchain = () => {
+const Blockchain: React.FC<IProps> = ({ blockchain }) => {
   return (
     <div>
       <h1>Hello world from the blockchain component</h1>

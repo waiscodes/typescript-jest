@@ -22,7 +22,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Hello world</h1>
-      <Blockchain />
+      <Blockchain blockchain={blockchain} />
     </div>
   );
 }
