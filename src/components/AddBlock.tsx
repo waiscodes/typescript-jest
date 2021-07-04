@@ -11,12 +11,19 @@ interface IProps {
 const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
   const contentRef = useRef<any>();
 
-  const addToBlock = () => {
-    console.log(sha256(contentRef.current?.value).toString());
+  const createBlock = (): void => {
+    setBlockchain([
+      ...blockchain,
+      {
+        content: contentRef.current.value,
+        hash: sha256(contentRef.current.value).toString(),
+      },
+    ]);
   };
 
   const handleSubmit = (e: React.MouseEvent<HTMLElement>): void => {
     e.preventDefault();
+    createBlock();
   };
 
   return (
