@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Hello world</h1>
+      <h1>Interactive Blockchain Visualizer</h1>
       <AddBlock setBlockchain={setBlockchain} blockchain={blockchain} />
       <Blockchain blockchain={blockchain} />
     </div>

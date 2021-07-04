@@ -29,7 +29,6 @@ const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
 
   return (
     <div>
-      <p>Hello world from add block component</p>
       <input type='text' ref={contentRef} />
       <button onClick={handleSubmit}>Add block</button>
     </div>
