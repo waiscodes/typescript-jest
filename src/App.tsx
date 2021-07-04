@@ -5,11 +5,15 @@ import "./App.css";
 import Block from "./components/Block";
 
 // Block Interface
-interface IState {
+export interface IState {
   blockchain: {
     content: string;
     hash: string;
   }[];
+  block: {
+    content: string;
+    hash: string;
+  };
 }
 
 function App() {
