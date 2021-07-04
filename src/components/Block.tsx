@@ -1,6 +1,12 @@
 import React from "react";
+import { IState as Props } from "../App";
 
-const Block = () => {
+// Block Interface
+interface IProps {
+  block: Props["block"];
+}
+
+const Block: React.FC<IProps> = ({ block }) => {
   return (
     <div>
       <h1>Hello world from the block component</h1>

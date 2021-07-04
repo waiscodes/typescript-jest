@@ -13,7 +13,6 @@ const Blockchain: React.FC<IProps> = ({ blockchain }) => {
   return (
     <div>
       <h1>Hello world from the blockchain component</h1>
-      <Block />
     </div>
   );
 };
