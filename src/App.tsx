@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 
 // components
 import Blockchain from "./components/Blockchain";
