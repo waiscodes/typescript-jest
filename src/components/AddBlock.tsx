@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { IState as Props } from "../App";
 import sha256 from "crypto-js/sha256";
+import "../css/AddBlock.css";
 
 // Block interface
 interface IProps {
@@ -31,7 +32,7 @@ const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
   };
 
   return (
-    <div>
+    <div className='add-block'>
       <form onSubmit={handleSubmit}>
         <input type='text' ref={contentRef} />
         <input type='submit' value='Add Block to Blockchain' />
