@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 // components
 import Blockchain from "./components/Blockchain";
-import AddBlock from "./components/AddBlock";
 
 // Block Interface
 export interface IState {
@@ -29,9 +28,8 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Interactive Blockchain Visualizer</h1>
-      <AddBlock setBlockchain={setBlockchain} blockchain={blockchain} />
-      <Blockchain blockchain={blockchain} />
+      <h1>Interactive Blockchain Visualizer</h1>{" "}
+      <Blockchain setBlockchain={setBlockchain} blockchain={blockchain} />
     </div>
   );
 }
