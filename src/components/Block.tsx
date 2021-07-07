@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/Block.css";
 import { IState as Props } from "../App";
 
 // Block Interface

@@ -1,5 +1,6 @@
 import React from "react";
 import { IState as Props } from "../App";
+import "../css/Blockchain.css";
 
 // Components
 import Block from "./Block";
@@ -18,7 +19,7 @@ const Blockchain: React.FC<IProps> = ({ blockchain }) => {
 
   return (
     <div>
-      <h3>Blockchain</h3>
+      <h3>How Does A Blockchain Work?</h3>
       {renderBlockchain()}
     </div>
   );
