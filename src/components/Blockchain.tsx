@@ -18,7 +18,7 @@ const Blockchain: React.FC<IProps> = ({ blockchain }) => {
   };
 
   return (
-    <div>
+    <div className='blockchain'>
       <h3>How Does A Blockchain Work?</h3>
       {renderBlockchain()}
     </div>

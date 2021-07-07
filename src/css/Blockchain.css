@@ -4,3 +4,11 @@
   width: 650px;
   margin-bottom: 10px;
 }
+
+.blockchain {
+  border: none;
+}
+
+.blockchain > h3 {
+  text-align: center;
+}
