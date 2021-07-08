@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Interactive Blockchain Visualizer</h1>{" "}
+      <h1>Interactive Blockchain Visualizer</h1>
       <Blockchain setBlockchain={setBlockchain} blockchain={blockchain} />
     </div>
   );
