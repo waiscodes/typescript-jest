@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 const Sha256 = () => {
-  const hashRef = useRef();
+  const hashRef = useRef<any>();
 
   const handleSubmit = (e: React.FormEvent<HTMLElement>): void => {
     e.preventDefault();
@@ -10,7 +10,7 @@ const Sha256 = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <input type='text' ref={hashRef} />
-        <input type='submit' value='Add Block to Blockchain' />
+        <input type='submit' value='Check SHA256 Hash' />
       </form>
     </div>
   );

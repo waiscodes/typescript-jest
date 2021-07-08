@@ -3,6 +3,7 @@ import "./css/App.css";
 
 // components
 import Blockchain from "./components/Blockchain";
+import Sha256 from "./components/Sha256Hash";
 
 // Block Interface
 export interface IState {
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className='App'>
       <h1 className='title'>Interactive Blockchain Visualizer</h1>
+      <Sha256 />
       <Blockchain setBlockchain={setBlockchain} blockchain={blockchain} />
     </div>
   );
