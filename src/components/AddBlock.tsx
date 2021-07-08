@@ -15,12 +15,14 @@ const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
   const createBlock = (): void => {
     const content: string = contentRef.current.value;
     const previousHash: string = blockchain[blockchain.length - 1].hash;
+    const timeStamp: Date = new Date();
 
+    console.log(timeStamp);
     setBlockchain([
       ...blockchain,
       {
         content: content,
-        hash: sha256(content + previousHash).toString(),
+        hash: sha256(previousHash + timeStamp + content).toString(),
         previousHash: previousHash,
       },
     ]);
