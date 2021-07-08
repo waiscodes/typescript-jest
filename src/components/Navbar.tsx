@@ -6,17 +6,11 @@ const Navbar = () => {
     <>
       <Nav justify variant='tabs' defaultActiveKey='/home'>
         <Nav.Item>
-          <Nav.Link href='/home'>Active</Nav.Link>
+          <Nav.Link href='/'>Sha256 Hash</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey='link-1'>Loooonger NavLink</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-2'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='disabled' disabled>
-            Disabled
+          <Nav.Link eventKey='link-1' href='/blockchain'>
+            Blockchain
           </Nav.Link>
         </Nav.Item>
       </Nav>
