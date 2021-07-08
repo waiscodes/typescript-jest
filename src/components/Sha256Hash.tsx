@@ -1,17 +1,17 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
+import sha256 from "crypto-js/sha256";
 
 const Sha256 = () => {
-  const hashRef = useRef<any>();
+  const [hash, setHash] = useState<string>("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLElement>): void => {
-    e.preventDefault();
+  const createHashOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHash(sha256(e.target.value).toString());
   };
+
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type='text' ref={hashRef} />
-        <input type='submit' value='Check SHA256 Hash' />
-      </form>
+      <p>{hash}</p>
+      <input type='text' onChange={createHashOnChange} />
     </div>
   );
 };
