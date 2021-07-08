@@ -10,14 +10,15 @@ const Block: React.FC<IProps> = ({ block }) => {
   return (
     <div className='block'>
       <p>
+        <b>Hash: </b> {block.hash}
+      </p>
+      <p>
         <b>Previous Hash: </b> {block.previousHash}
       </p>
       <p>
         <b>Timestamp: </b> {block.timestamp.toString()}
       </p>
-      <p>
-        <b>Hash: </b> {block.hash}
-      </p>
+
       <p>
         <b>Content: </b> {block.content}
       </p>
