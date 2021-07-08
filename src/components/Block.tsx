@@ -13,6 +13,9 @@ const Block: React.FC<IProps> = ({ block }) => {
         <b>Previous Hash: </b> {block.previousHash}
       </p>
       <p>
+        <b>Timestamp: </b> {block.timestamp.toString()}
+      </p>
+      <p>
         <b>Hash: </b> {block.hash}
       </p>
       <p>
