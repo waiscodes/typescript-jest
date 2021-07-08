@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./css/App.css";
+import { Container } from "react-bootstrap";
 
 // components
 import Blockchain from "./components/Blockchain";
@@ -35,13 +36,18 @@ function App() {
   return (
     <>
       <Router>
-        <h1 className='title'>Interactive Blockchain Visualizer</h1>
-        <Switch>
-          <Route exact path='/' component={Sha256} />
-          <Route path='/blockchain'>
-            <Blockchain setBlockchain={setBlockchain} blockchain={blockchain} />
-          </Route>
-        </Switch>
+        <Container>
+          <h1 className='title'>Interactive Blockchain Visualizer</h1>
+          <Switch>
+            <Route exact path='/' component={Sha256} />
+            <Route path='/blockchain'>
+              <Blockchain
+                setBlockchain={setBlockchain}
+                blockchain={blockchain}
+              />
+            </Route>
+          </Switch>
+        </Container>
       </Router>
     </>
   );
