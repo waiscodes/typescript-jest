@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import "./css/App.css";
 
 // components
 import Blockchain from "./components/Blockchain";
+import Sha256 from "./components/Sha256";
 
 // Block Interface
 export interface IState {
@@ -31,7 +33,8 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Interactive Blockchain Visualizer</h1>
+      <h1 className='title'>Interactive Blockchain Visualizer</h1>
+      <Sha256 />
       <Blockchain setBlockchain={setBlockchain} blockchain={blockchain} />
     </div>
   );
