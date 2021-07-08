@@ -17,13 +17,13 @@ const AddBlock: React.FC<IProps> = ({ setBlockchain, blockchain }) => {
     const previousHash: string = blockchain[blockchain.length - 1].hash;
     const timeStamp: Date = new Date();
 
-    console.log(timeStamp);
     setBlockchain([
       ...blockchain,
       {
         content: content,
         hash: sha256(previousHash + timeStamp + content).toString(),
         previousHash: previousHash,
+        timestamp: timeStamp,
       },
     ]);
   };

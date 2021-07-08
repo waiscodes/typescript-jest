@@ -9,11 +9,13 @@ export interface IState {
     content: string;
     hash: string;
     previousHash: string;
+    timestamp: Date;
   }[];
   block: {
     content: string;
     hash: string;
     previousHash: string;
+    timestamp: Date;
   };
 }
 
@@ -23,6 +25,7 @@ function App() {
       content: "Hello, world from genesis block!",
       hash: "521ec81f86658406e253b16cb7f00d967f86e91e6839a70edda8a9b01631b90a",
       previousHash: "Genesis-Block doesn't have a previous hash",
+      timestamp: new Date("January 03, 2009 10:15:00"),
     },
   ]);
 
