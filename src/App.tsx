@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import Blockchain from "./components/Blockchain";
 import Sha256 from "./components/Sha256Hash";
 import Nav from "./components/Navbar";
+import BlockExplorer from "./components/BlockExplorer";
 
 // Block Interface
 export interface IState {
@@ -48,6 +49,7 @@ function App() {
                 blockchain={blockchain}
               />
             </Route>
+            <Route path='/explorer' component={BlockExplorer} />
           </Switch>
         </Container>
       </Router>
