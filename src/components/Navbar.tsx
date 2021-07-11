@@ -13,6 +13,11 @@ const Navbar = () => {
             Blockchain
           </Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey='link-1' href='/explorer'>
+            Block Explorer
+          </Nav.Link>
+        </Nav.Item>
       </Nav>
     </>
   );
