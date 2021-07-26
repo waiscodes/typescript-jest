@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 
 const BlockExplorer = () => {
-  axios.get("https://chain.api.btc.com/v3/block/3").then((res) => {
-    if (res.data.items) {
-      console.log(res.data.items);
-    }
-  });
+  useEffect(() => {
+    axios.get("https://mynano.ninja/api/blockcount").then((res) => {
+      if (res.data.items) {
+        console.log(res.data.items);
+      } else {
+        console.log("hello world");
+      }
+    });
+  }, []);
 
   return (
     <div>
